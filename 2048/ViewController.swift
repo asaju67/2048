@@ -7,13 +7,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+    @IBOutlet var numbers: [UILabel]!
+    @IBOutlet var swipeGestureRecognizer: UISwipeGestureRecognizer!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        swipeGestureRecognizer.isEnabled
+        
+        
     }
-
-
+    
+    @IBAction func gestureRecognized(_ sender: Any) {
+        if swipeGestureRecognizer.direction == .down {
+            
+        }
+        
+    }
+    
 }
 
